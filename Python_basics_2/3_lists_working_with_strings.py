@@ -61,3 +61,18 @@ def linguistics():
     print("\nПодсчёт слов в тексте")
     for i in range(3):
         print(f"{words_list[i]}: {counts_list[i]}")
+
+
+numbers = [10, 5, 7, 22, 2, 4]
+
+print(numbers)
+
+min_num = numbers[0]
+for i in range(len(numbers)):
+    for j in range(i + 1, len(numbers)):
+        if numbers[i] < numbers[j]:
+            temp = numbers[i]
+            numbers[i] = numbers[j]
+            numbers[j] = temp
+
+print(numbers)
